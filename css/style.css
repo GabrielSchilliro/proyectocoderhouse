@@ -1,0 +1,253 @@
+/* INICIO SHOP */
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FIN SHOP */
+
+/* INICIO DUDAS */
+
+/* Accedo a la raiz del documento para definir variables */
+:root {
+    --primario: #18B3B3;
+    --gris-claro: #B8B8B8;
+    --sombra: 0 0 13px 0 rgba(185,185,185 .25)
+}
+
+main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.tittle-dudas {
+    color: #4d5371;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0;
+}
+
+/* Categorías */
+
+.categorias {
+    display: grid;
+    /* 2 columnas */
+    grid-template-columns: repeat(2,1fr);
+    /* Entre cada elemento un espacio de 20px */
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.categoria {
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    /* Para bordes redondeados */
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: 700;
+    /* var para llamar a la variable en el color */
+    color: var(--gris-claro);
+    border: 2px solid transparent;
+    transition: .3s ease all;
+}
+
+.categoria:hover {
+    box-shadow: var(--sombra);
+    color: #000;
+}
+
+.categoria:hover path {
+    fill: var(--primario);
+}
+
+.categoria svg {
+    width: 64px;
+    margin-bottom: 10px;
+}
+
+.categoria path {
+    fill: var(--gris-claro);
+    transition: .3s ease all;
+}
+
+.categoria.activa {
+    border: 2px solid var(--primario);
+    color: #000;
+}
+
+.categoria.activa path {
+    fill: var(--primario);
+}
+
+/* Contenedor Preguntas */
+.contenedor-preguntas {
+    display: none;
+    /* Solo quiero una columna */
+    grid-template-columns: 1fr;
+    /* Espacio */
+    gap: 40px;
+}
+
+.contenedor-preguntas.activo {
+    display: grid;
+}
+
+.contenedor-pregunta {
+    background: #fff;
+    padding: 40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.contenedor-pregunta:hover {
+    box-shadow: var(--sombra);
+}
+
+.contenedor-pregunta.activa {
+    border: 2px solid var(--primario);
+}
+
+/* Preguntas */
+
+.pregunta {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    /* Con space-between el texto estara a la izquierda y la imagen a la derecha */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pregunta img {
+    width: 14px;
+    transition: 0.5s;
+}
+
+.respuesta {
+    color: #808080;
+    line-height: 30px;
+    max-height: 0;
+    opacity: 0;
+    transition: .3s ease all;
+}
+
+.contenedor-pregunta.activa .respuesta {
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.contenedor-pregunta.activa img {
+    /* Rotar la imagen 45 grados */
+    transition: 0.5s;
+    transform: rotate(45deg);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px){
+    .categoria {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .categoria svg {
+        width: 60px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .categorias {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FIN DUDAS */
+
+/* Inicio estilos del formulario de contacto */
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Inicio Checkbox */
+
+.checkbox {
+    display: flex;
+    margin: 10px -5px;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Border radius para que sea semi circular el checkbox */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+input[type=checkbox]:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    /* Traigo al icono */
+    content: "\f00c";
+    font-size: 15px;
+    color: white;
+    display: none;
+}
+
+input[type="checkbox"]:hover{
+    background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #18b3b3;
+}
+
+input[type="checkbox"]:checked::after{
+    display: block;
+}
+/* Fin Checkbox */
+
+/* Fin estilos del formulario de contacto */
+
+.history-image {
+    object-fit: cover;
+    width: 600px; 
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .history-image {
+        width: 100%;
+    }
+}

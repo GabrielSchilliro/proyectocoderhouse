@@ -1,0 +1,10 @@
+%textarea {
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+textarea {
+    @extend %textarea;
+}

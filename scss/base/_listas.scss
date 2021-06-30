@@ -1,0 +1,75 @@
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Tamaño y color del título */
+.tittle {
+  font-size: 40px;
+  color: #4d5371;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+h1 {
+  color: #18b3b3;
+  font-size: 2em;
+}
+
+h2 {
+  /* Color de los encabezados h2 */
+  color: #18b3b3;
+  text-align: center;
+}
+
+h5 {
+  color: #4d5371;
+}
+
+/* SLIDER DE IMAGENES */
+
+.carousel-inner {
+  max-height: 40rem;
+  max-width: 40rem;
+}
+
+/* INFORMATIVE ICONS */
+
+.section-informative-banners {
+  padding: 20px 0;
+  text-align: center;
+}
+  
+.service-item {
+  margin: 20px 0;
+  padding: 0 10px;
+}
+  
+.service-icon {
+  height: 100px;
+  margin: 10px 0;
+}
+  
+.service-icon:hover {
+  color: #18b3b3;
+}
+  
+.service-tittle {
+  margin: 0 0 5px 0;
+  color: #000;
+}
+  
+.service-tittle:hover {
+  color: #18b3b3;
+  transition: .3s ease;
+}

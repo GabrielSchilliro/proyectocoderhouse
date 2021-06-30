@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* Nesting */
+/* MENU */
+#menu ul {
+  list-style: none;
+}
+#menu ul li {
+  text-align: center;
+}
+#menu ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+#menu ul li a:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+/* FIN MENU */
+/* FOOTER */
+.social-menu {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-menu ul {
+  display: flex;
+  justify-content: center;
+}
+.social-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 20px;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.social-menu ul li .fa:hover {
+  color: #fff;
+}
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 35%;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px) scale(1.2);
+  background-color: #18B3B3;
+}
+
+/* FIN FOOTER */
+/* WHATSAPP ICON */
+.float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
+.my-float {
+  margin-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MEDIA QUERIES PANTALLA SM */
+@media (max-width: 768px) {
+  #intro {
+    width: 90% !important;
+  }
+
+  .float {
+    display: none;
+  }
+}
+/* FIN WHATSAPP ICON */
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+/* Inicio Boton de enviar */
+.contact-button {
+  background: #18b3b3;
+  color: #fff;
+  padding: 20px;
+  letter-spacing: 4px;
+  transition: all 0.25s ease-in;
+}
+
+.contact-button:hover {
+  color: #18b3b3;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.25s ease-in;
+}
+
+/* Fin Boton de enviar */
+/* Inicio Boton de limpiar datos */
+.clean-button {
+  background: #38393d;
+  color: #fff;
+  padding: 20px;
+  letter-spacing: 4px;
+  transition: all 0.25s ease-in;
+}
+
+.clean-button:hover {
+  color: #38393d;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.25s ease-in;
+}
+
+/* Fin Boton de limpiar datos */
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding-left: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Tamaño y color del título */
+.tittle {
+  font-size: 40px;
+  color: #4d5371;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+h1 {
+  color: #18b3b3;
+  font-size: 2em;
+}
+
+h2 {
+  /* Color de los encabezados h2 */
+  color: #18b3b3;
+  text-align: center;
+}
+
+h5 {
+  color: #4d5371;
+}
+
+/* SLIDER DE IMAGENES */
+.carousel-inner {
+  max-height: 40rem;
+  max-width: 40rem;
+}
+
+/* INFORMATIVE ICONS */
+.section-informative-banners {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.service-item {
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.service-icon {
+  height: 100px;
+  margin: 10px 0;
+}
+
+.service-icon:hover {
+  color: #18b3b3;
+}
+
+.service-tittle {
+  margin: 0 0 5px 0;
+  color: #000;
+}
+
+.service-tittle:hover {
+  color: #18b3b3;
+  transition: 0.3s ease;
+}
+
+/*# sourceMappingURL=styles.css.map */
