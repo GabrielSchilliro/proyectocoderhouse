@@ -215,4 +215,24 @@ h5 {
   transition: 0.3s ease;
 }
 
+.history-image {
+  object-fit: cover;
+  width: 600px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .history-image {
+    width: 100%;
+  }
+}
+/* INICIO SHOP */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FIN SHOP */
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,13 +1,3 @@
-/* INICIO SHOP */
-
-.gallery-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* FIN SHOP */
-
 /* INICIO DUDAS */
 
 /* Accedo a la raiz del documento para definir variables */
@@ -239,15 +229,3 @@ input[type="checkbox"]:checked::after{
 /* Fin Checkbox */
 
 /* Fin estilos del formulario de contacto */
-
-.history-image {
-    object-fit: cover;
-    width: 600px; 
-    height: 300px;
-}
-
-@media (max-width: 768px) {
-    .history-image {
-        width: 100%;
-    }
-}
