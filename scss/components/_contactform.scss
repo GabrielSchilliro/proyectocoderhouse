@@ -28,6 +28,20 @@ input[type="checkbox"]{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        /* Traigo al icono */
+        content: "\f00c";
+        font-size: 15px;
+        color: white;
+        display: none;
+    }
+
+    &:hover {
+        background-color: #a5a5a5;
+    }
 }
 
 label {
@@ -37,26 +51,12 @@ label {
     cursor: pointer;
 }
 
-input[type=checkbox]:after{
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    /* Traigo al icono */
-    content: "\f00c";
-    font-size: 15px;
-    color: white;
-    display: none;
-}
-
-input[type="checkbox"]:hover{
-    background-color: #a5a5a5;
-}
-
 input[type="checkbox"]:checked{
     background-color: #18b3b3;
-}
 
-input[type="checkbox"]:checked::after{
-    display: block;
+    &:after {
+        display: block;
+    }
 }
 /* Fin Checkbox */
 
