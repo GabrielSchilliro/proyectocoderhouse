@@ -1,11 +1,11 @@
 {
-  "name": "desafio",
+  "name": "proyecto_final",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Gabriel Schilliro",
   "license": "ISC",
-  "description": ""
+  "description": "Proyecto final; Front end de una 'tienda' de joyas"
 }
