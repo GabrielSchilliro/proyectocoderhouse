@@ -81,7 +81,7 @@ input[type=checkbox]:checked:after {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-top: 20px;
+  margin: 4% 0 0 0;
 }
 .social-menu ul {
   display: flex;
