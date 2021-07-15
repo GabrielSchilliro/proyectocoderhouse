@@ -8,9 +8,10 @@
                 font-size: 18px;
                 font-weight: bold;
                 color: #000;
+                margin-right: 5px;
                 
                 &:hover {
-                    background: rgba(0, 0, 0, 0.1);
+                    color: #18B3B3;
                     transition: all 0.5s ease;
                 }    
             }
