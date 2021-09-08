@@ -1,20 +1,22 @@
 // Obtengo la clase button
-const Clickbutton = document.querySelectorAll('.button');
+const clickButton = document.querySelectorAll('.button');
 //
 const tbody = document.querySelector('.tbody');
 // Array del carrito (lista de productos seleccionados)
 let carrito = [];
 // forEach recorre la matriz
-Clickbutton.forEach(btn => {
+$(".button").click((e) => {
+  addToCarritoItem(e.target)
+});
+/* clickButton.forEach(btn => {
   // "Escucho" el evento 'click'
   btn.addEventListener('click', addToCarritoItem);
-})
+}) */
 
 // Funcion que se ejecuta cuando hago se detecta un click a un producto
 function addToCarritoItem(e){
-  const button = e.target;
   // Guardo al producto/item que clickee
-  const item = button.closest('.card');
+  const item = e.closest('.card');
   // Obtengo el titulo/nombre del producto
   const itemTitle = item.querySelector('.card-title').textContent;
   // Obtengo el precio del producto
