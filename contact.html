@@ -83,21 +83,16 @@
 
     <section class="p-3 w75 mx-auto col-lg-5 col-sm-12 justify-content-center border-3">
         <!-- Inicio del formulario de contacto -->
-        <form action="">
+        <form action="enviar.php" method="post">
             <!-- Encabezados -->
             <h1 class="text-center pt-2 f-2 border-top border-3">Contacto</h1>
             <p class="p-3 text-center">Envianos un mensaje para ayudarte a encontrar el brillo que estas buscando</p>
             <!-- Inputs tipo texto para que puedan ingresar los datos -->
-            <input type="text" name="nombre" placeholder="Nombre">
-            <input type="text" name="email" placeholder="Email">
-            <input type="text" name="teléfono" placeholder="Teléfono">
-            <!-- Input checkbox -->
-            <div class="checkbox justify-content-center">
-                <input type="checkbox" name="checkbox" id="check">
-                <label for="check">¿Desea recibir nuestro newsletter?</label>
-            </div>
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+            <input type="text" name="email" placeholder="Email" id="email">
+            <input type="text" name="telefono" placeholder="Teléfono" id="telefono">
             <!-- textarea para que el usuario redacte su mensaje -->
-            <textarea name="mensaje" placeholder="Escriba acá su mensaje"></textarea>
+            <textarea name="mensaje" placeholder="Escriba acá su mensaje" id="mensaje"></textarea>
             <!-- Botón de enviar -->
             <input class="contact-button" type="submit" value="ENVIAR">
             <!-- Botón para limpiar datos/borrar lo escrito -->
